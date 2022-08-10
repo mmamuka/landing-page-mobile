@@ -64,6 +64,11 @@ body {
         margin-right: 6.4%;
     }
 
+    header a:hover {
+        background-color: var(--gray-darg);
+        color: #E8EFF2;
+    }
+
 
         /* Main of the page */
 
@@ -103,7 +108,7 @@ body {
         align-items: center;
         display: flex;
     }
-    .container h2 {
+    .container a {
         display: flex;
         background: var(--orange);
         border-radius: 8px;
@@ -120,6 +125,12 @@ body {
         margin-top: 8.53%;
     }
 
+    .container a:hover {
+        background-color: var(--orange-light);
+    }
+       
+    
+    
     .container h3 {
         border-radius: 8px;
         font-family: 'Barlow';
@@ -459,7 +470,7 @@ body {
     }
     
     header {
-        margin-left: 6.4%;
+        margin-left: 8%;
     }
     .first-image {
         background-image: url(assets/desktop/image-keyboard.jpg);
