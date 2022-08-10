@@ -140,17 +140,21 @@ body {
    position: relative;
 
 }
-
-
 .image-one-cont {
+    position: relative;
+    mix-blend-mode: multiply;
+}
+
+.image-one-hover {
     position: absolute;
-    Width: 129px;
+    Width: 155px;
     Height: 193px;
     border-radius: 20px;
     background: var(--orange);
     opacity: 0.75;
     left: -7%;
-    mix-blend-mode: multiply;
+    top: 0%;
+    /* mix-blend-mode: multiply; */
 }
 
 .image-one {
@@ -159,20 +163,21 @@ body {
     background-size: cover;
     Width: 129px;
     Height: 193px;
-    border-radius: 20px;
-    margin-left: 0%;
-    position:relative;
+    border-radius: 00 20px;
+    left: -1%;
+    margin-top: 10%;
+    /* position:relative; */
 
 }
 
 
 .image-two {
     background-image: url(./assets/mobile/image-glass-and-keyboard.jpg);
-    width: 253px;
+    width: 218px;
     height: 193px;
     border-radius: 30px;
-    margin-left: 119px;
-    margin-top: 10px;
+    margin-left: 147px;
+    margin-top: -191px;
 }
 .section-info {
     margin-top: 23vw;
@@ -212,7 +217,7 @@ body {
 }
 .block {
     margin-top: 10vw;
-    margin-left: 2.8vh;
+    margin-left: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
