@@ -424,6 +424,35 @@ body {
             /* Desktop version  */
 
 @media screen and (min-width: 1440px) {
+    
+    header img {
+        margin-left: 12.4%;
+    }            
+    header a {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        background: var(--gray-light-two);
+        border-radius: 8px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--gray-darg);
+        width: 175px;
+        height: 58px;
+        align-items: center;
+        margin-top: 27px;
+        margin-right: 11.5%;
+    }
+
+
+    body {
+        background-image: url(assets/shared/pattern-square.svg);
+        background-repeat: no-repeat;
+        background-position: right -131px top 150px;
+    }
+    
     .container {
         margin-top: 5%;
         margin-left: 6.4%;    
@@ -434,9 +463,16 @@ body {
     }
     .first-image {
         background-image: url(assets/desktop/image-keyboard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40vw;
+        height: 450px;
+        border-radius: 20px;
+        margin-left: 137px;
     }
 
     .section-one {
+        margin-top: -80px;
         margin-left: 6.4%;
         display: flex;
         display:inline-flex
@@ -491,5 +527,4 @@ body {
         /* height: 300px; */
       
     }
-
 }        
