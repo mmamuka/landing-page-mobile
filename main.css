@@ -5,7 +5,9 @@
     --orange-light: #FF9B62;
     --gray-darg: #162542;
     --gray-light: #7B8BAD;
+    --gray-light-two: #E8EFF2;
     --font-700: 'wght' 700, 'GRAD' 16;
+
 }
 
 *{
@@ -15,7 +17,7 @@
     font-family: 'IBM Plex Sans';
     box-sizing: border-box;
     text-decoration: none;
-    /* outline: solid red; */
+    outline: solid red;
 }
 
 
@@ -30,33 +32,35 @@ body {
  /* <!-- Head off page --> */
     
     header {
-        justify-content: space-between;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
     }
 
-    .logo {
+    header img{
+        display: flex;
         width: 40px;
         height: 40px;
-        margin-left: 24px;
+        margin-left: 6.4%;
         margin-top:27px;
     }
-    header h1{
+
+    header a {
+        display: inline-block;
         display: flex;
-        background: var(--gray-light);
+        justify-content: center;
+        background: var(--gray-light-two);
         border-radius: 8px;
         font-family: 'Barlow';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        /* letter-spacing: -0.18px; */
-        color: #FCFAF9;
+        color: var(--gray-darg);
         width: 150px;
         height: 48px;
-        justify-content: center;
         align-items: center;
-        margin-left: 205px;
-        margin-top: -45px;      
+        /* margin-right: 6.4%; */
     }
 
 
@@ -130,30 +134,18 @@ body {
     background: url(./assets/mobile/image-keyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 64px; */
     width: 99.8%;
     height: 331px;
     border-radius: 20px 0 0 20px;
 }
 
 .section-one{
+    margin-top: 20px;
    position: relative;
 
 }
 .image-one-cont {
     position: relative;
-    mix-blend-mode: multiply;
-}
-
-.image-one-hover {
-    position: absolute;
-    Width: 155px;
-    Height: 193px;
-    border-radius: 20px;
-    background: var(--orange);
-    opacity: 0.75;
-    left: -7%;
-    top: 0%;
     /* mix-blend-mode: multiply; */
 }
 
@@ -165,14 +157,27 @@ body {
     Height: 193px;
     border-radius: 00 20px;
     left: -1%;
-    margin-top: 10%;
-    /* position:relative; */
+    /* margin-top: 10%; */
 
 }
+.image-one-hover {
+    position: absolute;
+    Width: 155px;
+    Height: 193px;
+    border-radius: 20px;
+    background: var(--orange);
+    opacity: 0.75;
+    left: -7%;
+    top: 0%;
+}
+
+
 
 
 .image-two {
     background-image: url(./assets/mobile/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    /* display: inline-block; */
     width: 218px;
     height: 193px;
     border-radius: 30px;
@@ -180,11 +185,12 @@ body {
     margin-top: -191px;
 }
 .section-info {
+    margin-left: 6.4%;
+    margin-right: 6.4%;
     margin-top: 23vw;
-    /* margin-top: 32px; */
-    width: 37.41vh;
-    /* height: 286px; */
-    margin-left: 3.83vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-info h1 {
@@ -196,6 +202,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: var(--gray-darg);
+    width: 255px;
+    height: 108px;
+
 }
 
 .section-info p {
@@ -206,24 +215,27 @@ body {
     line-height: 26px;
     text-align: center;
     color: var(--gray-light);
+    margin-top: 24px;
+    margin-left: 6.4%;
+    margin-right: 6.4%;
 }
 
 /* <!-- this is kayboard specification sectcion  --> */
 
 .section-two {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .block {
-    margin-top: 10vw;
-    margin-left: 3vh;
+    margin-top: 50px;
+    /* margin-left: 3vh; */
+    margin-left: 6.4%;
+    margin-right: 6.4%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 327px;
-    height: 286px;
-
 }
 
 .block div {
@@ -258,6 +270,8 @@ body {
     line-height: 26px;
     text-align: center;
     color: var(--gray-light);
+    margin-left: 6.4%;
+    margin-right: 6.4%;
 }
 
         /* Footer of the page  */
